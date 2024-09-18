@@ -1,0 +1,68 @@
+
+.mdl-layout__header-row {
+    padding-left: 20px;
+}
+
+.card-wide {
+    width: 512px;
+}
+
+.card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('predict.jpg') center / cover;
+}
+
+.mdl-card__supporting-text {
+    flex-grow: 1;
+}
+
+.card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.card-slider {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 30px
+}
+
+/* Position the front and back side */
+.card-first, .card-second {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.card-second {
+    transform: translateX(100%)
+}
+
+.card-slider.second .card-first {
+    transform: translateX(-100%)
+}
+
+.card-slider.second .card-second {
+    transform: translateX(0)
+}
+
+.mdl-button--file input {
+    cursor: pointer;
+    height: 100%;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+    z-index: 4;
+}
+
+.mdl-textfield--file .mdl-textfield__input {
+    box-sizing: border-box;
+    width: calc(100% - 32px);
+}
+
+.mdl-button--file {
+    right: 0;
+}
